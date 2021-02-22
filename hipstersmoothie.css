@@ -284,3 +284,8 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .markdown-preview-view tbody tr:nth-of-type(even) {
   background-color: var(--gray-1000);
 }
+
+/* The transitions just make the app feel slower */
+body * {
+  transition: none !important;
+}
