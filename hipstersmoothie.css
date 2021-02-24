@@ -302,3 +302,15 @@ body * {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.suggestion-item.is-selected {
+  background: var(--primary-600);
+}
+
+.suggestion-item.is-selected .suggestion-content {
+  color: white;
+}
+
+.suggestion-item.is-selected .suggestion-note {
+  color: var(--gray-500);
+}
