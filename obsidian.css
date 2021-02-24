@@ -314,3 +314,7 @@ body * {
 .suggestion-item.is-selected .suggestion-note {
   color: var(--gray-500);
 }
+
+.modal button:not(.mod-cta):not(.mod-warning) {
+    background-color: var(--gray-800);
+}
