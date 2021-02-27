@@ -292,15 +292,15 @@ body * {
 
 .markdown-preview-view ol ol,ul,
 .markdown-preview-view ul ol,ul {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 
 .markdown-preview-view ol p,
 .markdown-preview-view ul p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .suggestion-item.is-selected {
