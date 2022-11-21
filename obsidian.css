@@ -51,6 +51,9 @@
   --gray-1000: #181517;
   --gray-1100: #0c0c0c;
 
+  --table-header-background-hover: var(--primary-800);
+  --table-header-color: var(--gray-200);
+  --table-row-background-hover: var(--gray-900);
   --divider-color: var(--gray-900);
   --background-primary: var(--gray-1100);
   --background-primary-alt: var(--gray-1000);
@@ -229,7 +232,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 
 /* Table */
 :root {
-  --table-border-radius: 10px;
+  --table-border-radius: 8px;
 }
 
 .markdown-preview-view table {
@@ -273,17 +276,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   );
 }
 
-.markdown-preview-view tbody tr:last-child td {
-  border-bottom: 4px solid var(--primary-600);
-}
-
 .markdown-preview-view th,
 .markdown-preview-view td {
   padding: 0.5rem 15px;
-}
-
-.markdown-preview-view tbody tr:nth-of-type(even) {
-  background-color: var(--gray-1000);
 }
 
 /* The transitions just make the app feel slower */
@@ -329,4 +324,29 @@ ul {
 
 .mod-root .workspace-tab-header:not(.is-active) + .workspace-leaf {
   opacity: 0.7;
+}
+
+.markdown-rendered table,
+.markdown-rendered td {
+  border-collapse: collapse;
+}
+
+.markdown-rendered thead tr > th {
+  border: none;
+}
+
+.markdown-preview-view tbody tr:nth-of-type(odd) {
+  background-color: #231f21;
+}
+.markdown-preview-view tbody tr:nth-of-type(even) {
+  background-color: var(--gray-1000);
+}
+
+.markdown-preview-view tbody tr:hover:nth-of-type(odd),
+.markdown-preview-view tbody tr:hover:nth-of-type(even) {
+  background-color: var(--gray-800);
+}
+
+.markdown-preview-view tbody td {
+  border: none;
 }
