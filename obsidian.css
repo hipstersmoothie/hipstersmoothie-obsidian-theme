@@ -51,10 +51,12 @@
   --gray-1000: #181517;
   --gray-1100: #0c0c0c;
 
+  --divider-color: var(--gray-900);
   --background-primary: var(--gray-1100);
   --background-primary-alt: var(--gray-1000);
   --background-secondary: var(--gray-1100);
   --background-secondary-alt: var(--gray-1000);
+  --background-modifier-message: var(--gray-800);
   --background-modifier-border: var(--gray-600);
   --background-modifier-form-field: var(--gray-1100);
   --background-modifier-form-field-highlighted: var(--gray-1000);
@@ -275,7 +277,6 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   border-bottom: 4px solid var(--primary-600);
 }
 
-
 .markdown-preview-view th,
 .markdown-preview-view td {
   padding: 0.5rem 15px;
@@ -290,12 +291,13 @@ body * {
   transition: none !important;
 }
 
-.markdown-preview-view ol ol,ul,
-.markdown-preview-view ul ol,ul {
+.markdown-preview-view ol ol,
+ul,
+.markdown-preview-view ul ol,
+ul {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-
 
 .markdown-preview-view ol p,
 .markdown-preview-view ul p {
@@ -316,5 +318,5 @@ body * {
 }
 
 .modal button:not(.mod-cta):not(.mod-warning) {
-    background-color: var(--gray-800);
+  background-color: var(--gray-800);
 }
