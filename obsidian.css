@@ -320,3 +320,13 @@ ul {
 .modal button:not(.mod-cta):not(.mod-warning) {
   background-color: var(--gray-800);
 }
+
+.mod-root .workspace-tab-header.is-active,
+.mod-root .workspace-tab-header.is-active + .workspace-leaf .view-header-title,
+.mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  color: var(--gray-300) !important;
+}
+
+.mod-root .workspace-tab-header:not(.is-active) + .workspace-leaf {
+  opacity: 0.7;
+}
